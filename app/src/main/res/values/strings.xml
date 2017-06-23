@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Soạn Văn thpt</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchview_title">tìm kiếm </string>
+
+    <string name="DuoiCung">ca-app-pub-6929505284145846/7538176814</string>
+    <string name="manhinh">ca-app-pub-6929505284145846/4445109614</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/nenbac"
+    tools:context="soanvan.ebook.vn.soanvan.FirstActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+
+        android:paddingTop="25dp">
+
+
+        <Button
+
+            android:id="@+id/ibtn10"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/mybutton"
+            android:drawableLeft="@drawable/book10"
+            android:drawablePadding="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center"
+            android:text="Soạn văn lớp 10"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ibtn11"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mybutton"
+            android:drawableLeft="@drawable/book11"
+            android:drawablePadding="40dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center"
+
+            android:text="Soạn văn lớp 11"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ibtn12"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/mybutton"
+            android:drawableLeft="@drawable/book12"
+            android:drawablePadding="40dp"
+            android:fontFamily="sans-serif"
+
+            android:gravity="left|center"
+            android:text="Soạn văn lớp 12"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/av_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:layout_gravity="bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/DuoiCung">
+
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounds"
+    tools:context="soanvan.ebook.vn.soanvan.DetailActivity">
+    <ScrollView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/den"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+           "/>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/flbtcopy"
+
+        android:layout_width="60dp"
+
+        android:layout_height="60dp"
+
+
+        android:layout_above="@+id/ftbtshare"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="34dp"
+
+        android:layout_marginRight="34dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/copy" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ftbtshare"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_alignLeft="@+id/flbtcopy"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/flbtcopy"
+        android:layout_gravity="bottom|end"
+
+        android:layout_marginBottom="19dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/shares" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/av_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/DuoiCung">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

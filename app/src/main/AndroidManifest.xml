@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="soanvan.ebook.vn.soanvan">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity12" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".Tap1Activity" />
+        <activity android:name=".Tap2Activity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".information" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".MainActivity10"/>
+
+        <activity android:name=".MainActivity11" />
+        <activity android:name=".Tap1Activity10"></activity>
+
+    </application>
+
+</manifest>
